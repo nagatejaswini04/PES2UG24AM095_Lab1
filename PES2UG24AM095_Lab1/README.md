@@ -1,23 +1,48 @@
-# Lab 1 – Requirements Engineering & UML Use-Case Modelling
+# Lab 1 – Requirements Engineering and UML Design
 
-**Student:** PES2UG24AM095  
-**Section:** 5B  
-**Assigned problem:** Problem Statement #16 – Remote Patient Vitals Alert & Monitoring App
+## Student Details
+- **Name:** Naga Tejaswini
+- **SRN:** PES2UG24AM095
+- **Section:** 5B
+- **Scenario:** 16 – Healthcare & Telemedicine
 
-## Scenario
-A continuous monitoring application for post-operative patients that ingests SpO2, heart-rate and blood-pressure telemetry, detects configured threshold breaches, and escalates emergency alerts through a caregiver matrix.
+## Project Title
+**Remote Patient Vitals Alert & Monitoring App**
 
-## Contents
-- `Requirements_Table.xlsx` – exactly five functional requirements and two non-functional requirements, including the two supplied sample requirements.
-- `Requirements_Specification.docx` – formatted requirements specification.
-- `Use_Case_Diagram.pdf` – UML use-case diagram with actors and include/extend relationships.
-- `Use_Case_Flow.docx` – preconditions, main success scenario, alternate flow and postconditions.
+## Problem Statement
+The system monitors post-operative patients remotely by collecting vital signs such as SpO2, heart rate, and blood pressure. It evaluates the readings against configured clinical thresholds and alerts caregivers when critical anomalies are detected.
 
-## Important design assumptions
-- A Monitoring Device is modelled as an external actor that supplies telemetry.
-- A Clinical Administrator is included as an administrative actor to satisfy the handout's minimum of three actors; the assigned scenario explicitly names the Remote Patient and On-Call Caregiver as primary stakeholders.
-- Clinical thresholds and caregiver response windows are configurable by an authorised care provider and are not invented as medical guidance.
-- The alert escalation sequence is a software workflow proposal and should be confirmed against the instructor's detailed scenario requirements.
+## Stakeholders
+- Remote Patient
+- On-Call Caregiver
+- Clinical Administrator
+- Monitoring Device
 
-## GitHub
-Create a separate public repository named `PES2UG24AM095_Lab1`, then upload the contents of this folder. This package does not create or publish a GitHub repository automatically.
+## Lab Objectives
+- Identify and document functional and non-functional requirements.
+- Define measurable acceptance criteria.
+- Design a UML Use-Case Diagram.
+- Document the main success scenario and alternate flows.
+
+## Deliverables
+| File | Description |
+|---|---|
+| `Requirements_Table.xlsx` | Requirements with IDs, priorities, acceptance criteria, and rationale |
+| `Requirements_Specification.docx` | Detailed requirements specification |
+| `Use_Case_Diagram.pdf` | UML Use-Case Diagram |
+| `Use_Case_Flow.docx` | Preconditions, postconditions, main and alternate flows |
+
+## Key Requirements
+- Continuously evaluate patient vitals against configured clinical thresholds.
+- Flag critical anomalies within 2 seconds.
+- Support at least 500 concurrent telemetry streams.
+- Maintain 99.99% gateway uptime.
+- Support caregiver alerts and acknowledgement.
+
+## Tools Used
+- Microsoft Word
+- Microsoft Excel
+- UML Use-Case Modeling
+
+## Note
+Clinical thresholds and caregiver response times must be configured and validated by the appropriate healthcare professionals. This project is an academic software engineering assignment.
